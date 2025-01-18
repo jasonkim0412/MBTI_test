@@ -3,16 +3,12 @@ import MainPage from './pages/MainPage';
 import TestPage from './pages/TestPage';
 import ResultPage from './pages/ResultPage';
 import ErrorPage from './pages/ErrorPage';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import './App.css';
 
 const App: React.FC = () => {
   return (
     <Router>
       <div className="min-h-screen bg-gray-100">
-      <Analytics/>
-      <SpeedInsights/>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/questions" element={<TestPage />} />
